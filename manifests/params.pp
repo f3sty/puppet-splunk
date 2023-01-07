@@ -355,7 +355,7 @@ class splunk::params (
       $forwarder_package_name  = 'splunkforwarder'
       $enterprise_package_name = 'splunk'
     }
-    'Debian armv71': {
+    'Debian armv7l': {
       $package_suffix          = "${version}-${build}-Linux.arm.tgz"
       $forwarder_package_name  = 'splunkforwarder'
       $enterprise_package_name = 'splunk'
