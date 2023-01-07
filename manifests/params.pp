@@ -98,8 +98,8 @@
 #   already declared on your code base, you can disable this flag.
 #
 class splunk::params (
-  String[1] $version                         = '7.2.4.2',
-  String[1] $build                           = 'fb30470262e3',
+  String[1] $version                         = '8.1.9',
+  String[1] $build                           = 'a16db3287b56',
   String[1] $src_root                        = 'https://download.splunk.com',
   Stdlib::Port $splunkd_port                 = 8089,
   Stdlib::Port $logging_port                 = 9997,
