@@ -355,6 +355,11 @@ class splunk::params (
       $forwarder_package_name  = 'splunkforwarder'
       $enterprise_package_name = 'splunk'
     }
+    'Debian armv71': {
+      $package_suffix          = "${version}-${build}-Linux.arm.tgz"
+      $forwarder_package_name  = 'splunkforwarder'
+      $enterprise_package_name = 'splunk'
+    }
     default: { fail("unsupported osfamily/arch ${facts['os']['family']}/${facts['os']['architecture']}") }
   }
 
